@@ -8,7 +8,7 @@ int main() {
 
     string mystr = "Iterate";
 
-    for (char c : mystr)
+    for (auto c : mystr)
     {
         cout << c << '|';
     }
