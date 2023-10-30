@@ -35,6 +35,5 @@ int main()
 }
 
 void printmovie(movie_t movie) {
-    cout << movie.title;
-    cout << " (" << movie.year << ")\n\n";
+    cout << movie.title << " (" << movie.year << ")\n\n";
 }
