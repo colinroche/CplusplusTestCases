@@ -11,6 +11,7 @@
 */
 
 #include <iostream>
+#include <new>
 
 #define END "\n\n"
 #define LINESPACE '\n'
@@ -23,19 +24,25 @@ int main() {
 
     cout << "How many numbers would you like to type? ";
     cin >> i;
-    p = new int[i];
 
-    for (n = 0; n < i; n++) {
+    p = new (nothrow) int[i];
+
+    if (p == nullptr) {
+        cout << "Error memory could not be allocated!";
+    }
+    else {
+        for (n = 0; n < i; n++) {
         cout << "Enter number: ";
         cin >> p[n];
-    }
+        }
 
-    cout << "You have entered: ";
-    for (n = 0; n < i; n++)
-    {
-        cout << p[n] << ", ";
+        cout << "You have entered: ";
+        for (n = 0; n < i; n++)
+        {
+            cout << p[n] << ", ";
+        }
+        delete[] p;
     }
-    delete[] p;
 
     cout << END;
     return 0;
