@@ -1,3 +1,4 @@
+// pass generic parameters to a function using void pointers
 #include <iostream>
 
 #define END "\n\n"

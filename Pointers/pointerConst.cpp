@@ -1,3 +1,5 @@
+// pointers as parameters
+
 #include <iostream>
 
 #define END "\n\n"
