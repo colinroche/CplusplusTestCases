@@ -11,7 +11,7 @@ class Dummy {
 class Addition {
     int x,y;
   public:
-    Addition (int a, int b) { x = a; y = b; }
+    Addition(int a, int b) { x = a; y = b; }
     int result() { return x + y;}
 };
 
