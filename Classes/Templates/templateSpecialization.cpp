@@ -11,7 +11,7 @@ class myContainer {
 };
 
 // template specialization
-template<>
+template<> 
 class myContainer <char> {
         char element;
     public:
