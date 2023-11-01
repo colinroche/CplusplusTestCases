@@ -4,7 +4,7 @@
 #include <string>
 using namespace std;
 
-// using Example4 from deconstructor.cpp
+// using Example4 from copyConstructor.cpp
 class Example4 {
         string* ptr;
     public:
