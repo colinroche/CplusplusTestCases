@@ -12,7 +12,7 @@ int main() {
         // exception thrown - throw accepts 1 parameter - type int
         throw 20;
         // exception thrown - type char
-        throw 'c';
+    //    throw 'c';
         // excpetion handler declared with catch - 1 parameter - must match type thrown
     } catch (int e) {
         cout << "Int exception: " << e << '\n';
