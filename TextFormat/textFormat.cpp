@@ -20,7 +20,7 @@ int main() {
             shown for hexadecimal values*/
             
         cout << hex << left << showbase << nouppercase;
-        cout << (int) A << endl;
+        cout << (long long) A << endl;
         
         /*  showpos - specifies that the sign of positive numbers 
             should be shown with a plus sign ('+'). 
